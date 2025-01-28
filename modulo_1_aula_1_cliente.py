@@ -1,5 +1,14 @@
 import socket 
 
+
+ # A estrutura funciona em 4 etaps, pelo mesno o que entendi até agora 
+ # cliente envia um get, request, requisição
+ # Servidor recebe esse get
+ # servidor devolve 
+ # Cliente recebe uma response
+
+ # De forma grosseira, nesse primeiro codigo estamos simulando um cliente, um browser 
+
 # Importamos socket como qualquer outra biblioteca 
 # socket, files that we can send and receive, it's a two phases 
 
