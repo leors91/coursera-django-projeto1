@@ -1,0 +1,48 @@
+#### Colocando o projeto no GitHub ###
+
+1) Logado no próprio GitHub, criar new repository. 
+2) Copiar a chave SSH. Ex.:git@github.com:leors91/coursera-django-projeto1.git
+3) Abrir o terminal, ir na pasta do projeto 
+
+A partir da pasto do projeto vamos inserir os comandos git de configuração:
+
+3.1) git config --global user.name "Leonardo Rodrigues"
+3.2) git config --global user.email "leorsantos657@gmail.com"
+3.3) git config -- global init.defaultBranch main 
+
+Agora vamos com as configs realizadas 
+
+4.1) git init   -> A partir daqui o projeto é vinculado ao github 
+4.2) ssh-keygen  -> Utilizar a chave SSH, ele vai pedir senha e validação de senha, ou coloca e repete ou só segue sem senha 
+4.3) Depois irá aparecer algo do tipo 
+
+Your identification has been saved in C:\Users\ot/.ssh/id_ed25519
+Your public key has been saved in C:\Users\ot/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:3lYc9YJIeJL+KeMFMvNRRoycQdkxUNOPxsPVnyI6icw ot@2SH9B44
+The key's randomart image is:
++--[ED25519 256]--+
+|       o+&Bo  .. |
+|        O.*+.o...|
+|       . =.oo+. +|
+|      + +  o*o.o.|
+|      o=S+oo+..  |
+|       E+=+.     |
+|       ..++      |
+|        ..       |
+|                 |
++----[SHA256]-----+
+
+4.4) Abrimos o arquivo C:\Users\ot/.ssh/id_ed25519.pub 
+
+Copiamos ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMvWehWOOk8A05HAgZ1vzSzvtKEqJiezU3eYqvvrIE7i ot@2SH9B44
+
+5) Depois vamos no github em settings e SSH and GPG keys
+6) Depois no canto superior direito ir em New SSH key 
+7) Colamos o que foi copiado no arquivo.pub e criamos um add new key
+
+################################ Esse passo só precisa ser realizado uma vez, a partir de criado podemos ir para o passo abaixo por projeto ##########################
+
+
+8) git remote add origin git@github.com:leors91/coursera-django-projeto1.git -> Agora podemos adicinar a chave SSH ao projeto
+9) Para confirmar, digitar o comando git remote -. Aparecendo as duas linha de fetch e push esta tudo ok 
