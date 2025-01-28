@@ -45,4 +45,8 @@ Copiamos ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMvWehWOOk8A05HAgZ1vzSzvtKEqJiezU3e
 
 
 8) git remote add origin git@github.com:leors91/coursera-django-projeto1.git -> Agora podemos adicinar a chave SSH ao projeto
-9) Para confirmar, digitar o comando git remote -. Aparecendo as duas linha de fetch e push esta tudo ok 
+9) Para confirmar, digitar o comando git remote -v. Aparecendo as duas linha de fetch e push esta tudo ok 
+
+
+9.2) Quando fui refazer vi que teve um erro, mas foi um bom exemplo porque fez com que tivesse que ajustar oo git remote.
+9.3) Para isso -> git remote remove origin
